@@ -1,0 +1,9 @@
+set nu
+set expandtab
+set shiftwidth=4
+set smartindent
+set tabstop=4
+set textwidth=79
+set softtabstop=4
+set hlsearch
+set incsearch
