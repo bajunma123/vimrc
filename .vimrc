@@ -37,6 +37,18 @@ set incsearch
 set statusline+=%F
 set title
 
+
+" for ctags
+" This will look in the current directory for "tags", and work up the tree
+" towards root until one is found. IOW, you can be anywhere in your source
+" tree instead of just the root of it.
+set tags=./tags;/
+
+"This will make Control-] pop open a window and show the tag there. The
+":ptjump command shows the tag in a preview window without changing the
+"current buffer or your cursor position.
+nnoremap <C-]> <Esc>:exe "ptjump " . expand("<cword>")<Esc>
+
 "show the airline statusline
 set laststatus=2
 
