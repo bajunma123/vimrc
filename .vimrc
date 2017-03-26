@@ -49,6 +49,9 @@ set tags=./tags;/
 "current buffer or your cursor position.
 nnoremap <C-]> <Esc>:exe "ptjump " . expand("<cword>")<Esc>
 
+"You can then open and close Tagbar by simply pressing the <F9> key
+nnoremap <silent> <F8> :TagbarToggle<CR>
+
 "show the airline statusline
 set laststatus=2
 
