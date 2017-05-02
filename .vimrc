@@ -75,3 +75,6 @@ let g:NERDSpaceDelims = 1
 
 " Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDCommentEmptyLines = 1
+
+" setting for the mouse
+set mouse=a
