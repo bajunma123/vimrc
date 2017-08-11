@@ -54,6 +54,16 @@ nnoremap <C-]> <Esc>:exe "ptjump " . expand("<cword>")<Esc>
 "You can then open and close Tagbar by simply pressing the <F9> key
 nnoremap <silent> <F8> :TagbarToggle<CR>
 
+"tags are sorted according to their order in the source file
+let g:tagbar_sort = 0 
+
+"Show absolute line numbers.
+let g:tagbar_show_linenumbers = 1 
+
+"let g:airline#extensions#tagbar#enabled = 1
+
+"let g:airline#extensions#tagbar#flags = 'f'
+
 "show the airline statusline
 set laststatus=2
 
