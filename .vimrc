@@ -51,11 +51,15 @@ set tags=./tags;/
 "current buffer or your cursor position.
 nnoremap <C-]> <Esc>:exe "ptjump " . expand("<cword>")<Esc>
 
-"You can then open and close Tagbar by simply pressing the <F9> key
+"You can then open and close Tagbar by simply pressing the <F8> key
 nnoremap <silent> <F8> :TagbarToggle<CR>
 
 "tags are sorted according to their order in the source file
 let g:tagbar_sort = 0 
+
+"And if you want to open Tagbar only for specific filetypes, not for all of the
+"supported ones:
+autocmd FileType c,cpp nested :TagbarOpen
 
 "Show absolute line numbers.
 let g:tagbar_show_linenumbers = 1 
