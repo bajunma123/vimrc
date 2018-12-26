@@ -93,4 +93,5 @@ let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
 
 " setting for the mouse
-set mouse=a
+" set mouse=a
+set autoread
