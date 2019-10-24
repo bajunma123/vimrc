@@ -36,6 +36,7 @@ set tabstop=4
 set softtabstop=4
 set hlsearch
 set incsearch
+set paste       
 
 "show the full file path
 set statusline+=%F
