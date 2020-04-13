@@ -54,6 +54,9 @@ set tags=./tags;/
 "current buffer or your cursor position.
 nnoremap <C-]> <Esc>:exe "ptjump " . expand("<cword>")<Esc>
 
+"Ctrl+\ - Open the definition in a new tab
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
 "You can then open and close Tagbar by simply pressing the <F8> key
 nnoremap <silent> <F8> :TagbarToggle<CR>
 
